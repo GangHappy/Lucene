@@ -18,7 +18,8 @@ public class ProductUtil {
         System.out.println(products.size());
              
     }
- 
+	
+	//将文本文件转换成泛型Product集合
     public static List<Product> file2list(String fileName) throws IOException {
         File f = new File(fileName);
         List<String> lines = FileUtils.readLines(f,"UTF-8");
