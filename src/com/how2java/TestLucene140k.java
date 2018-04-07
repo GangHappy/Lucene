@@ -36,7 +36,7 @@ public class TestLucene140k {
         Scanner s = new Scanner(System.in);
          
         while(true){
-            System.out.print("请输入查询关键字：");
+            System.out.print("请输入查询关键字o：");
             String keyword = s.nextLine();
             System.out.println("当前关键字是："+keyword);
             Query query = new QueryParser( "name", analyzer).parse(keyword);
